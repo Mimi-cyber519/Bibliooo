@@ -14,7 +14,7 @@ namespace Bibliooo
 
         public LibraryContext(DbContextOptions<LibraryContext> options):base(options)
         {
-            
+            Database.Migrate();
         }
     }
 }
